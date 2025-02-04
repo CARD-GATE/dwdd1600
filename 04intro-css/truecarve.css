@@ -103,8 +103,12 @@ main address {
     width: 200px;
 }
 
-main a {
+main address a {
     color: #b0d9d5;
+}
+
+main a {
+    color: #a61f12;
 }
 
 main a:hover {
