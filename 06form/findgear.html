@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Carter Watson">
+    <meta name="description"
+        content="Find the perfect winter sports gear without the saturation and confusion of the industry">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="truecarve.css">
+    <title>TRUE CARVE: Team</title>
+</head>
+
+<body>
+    <!--Start the page head-->
+    <header>
+        <span>TRUE CARVE</span>
+    </header>
+
+    <!--Start the page navigation-->
+    <nav>
+        <ul>
+            <li><a href="index.html">Why True Carve</a></li>
+            <li class="active"><a href="findgear.html">Find Gear</a></li>
+            <li><a href="giving-back.html">Giving Back</a></li>
+            <li><a href="team.html">Team</a></li>
+        </ul>
+
+    </nav>
+
+    <!--start the main content-->
+    <main>
+        <h1>Help Us Help You Find The Perfect Gear</h1>
+
+        <h2>Input your information here so we can help you find the gear you'll love.</h2>
+
+        <form method="get" class="myForm" action="thanks.html">
+
+            <fieldset>
+                <legend>Contact Information</legend>
+                <label> First Name* <input type="text" name="fname" required> </label>
+                <label> Last Name* <input type="text" name="lname" required> </label>
+                <label> Email* <input type="email" name="email" required placeholder="johndoe@gmail.com"> </label>
+                <label> Cell Number* <input type="tel" name="phone" required placeholder="987-555-1234"> </label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Gender</legend>
+                <label><input type="radio" name="Gender" value="Male">Male</label>
+                <label><input type="radio" name="Gender" value="Female">Female</label>
+                <label><input type="radio" name="Gender" value="Other">Other</label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Equipment Preference</legend>
+                <label><input type="radio" name="Equipment" value="Snowboard">Snowboard</label>
+                <label><input type="radio" name="Equipment" value="Ski">Ski</label>
+                <label><input type="radio" name="Equipment" value="Other">Other</label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Skill Level</legend>
+                <label><input type="radio" name="Skill" value="Beginner">Beginner</label>
+                <label><input type="radio" name="Skill" value="Intermediate">Intermediate</label>
+                <label><input type="radio" name="Skill" value="Advanced">Advanced</label>
+                <label><input type="radio" name="Skill" value="Expert">Expert</label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Terrain Preference</legend>
+                <label><input type="checkbox" name="All Mountain" value="chosen">All Mountain</label>
+                <label><input type="checkbox" name="Groomers" value="chosen">Groomers</label>
+                <label><input type="checkbox" name="Trees" value="chosen">Trees</label>
+                <label><input type="checkbox" name="Powder" value="chosen">Powder</label>
+                <label><input type="checkbox" name="Park" value="chosen">Park</label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Sizing</legend>
+
+                <label>Height</label>
+                <select name="Height">
+                    <option value="none">Please Select</option>
+                    <option value="xxs">5' or less</option>
+                    <option value="xs">5'0" - 5'3"</option>
+                    <option value="s">5'4" - 5'7"</option>
+                    <option value="m">5'8" - 5'11"</option>
+                    <option value="l">6'0" - 6'2"</option>
+                    <option value="xl">6'3" - 6'5"</option>
+                    <option value="xxl">6'5"+</option>
+                </select>
+
+                <label>Weight</label>
+                <select name="Weight">
+                    <option value="none">Please Select</option>
+                    <option value="xxs">50 lbs or less</option>
+                    <option value="xs">50 lbs - 100 lbs</option>
+                    <option value="s">101 lbs - 150 lbs</option>
+                    <option value="m">151 lbs - 200 lbs</option>
+                    <option value="l">201 lbs - 250 lbs</option>
+                    <option value="xl">251 lbs - 300 lbs</option>
+                    <option value="xxl">300 lbs+</option>
+                </select>
+
+                <label>Foot Size</label>
+                <select name="Foot Size">
+                    <option value="none">Please Select</option>
+                    <option value="xs">US 4 - 6 (Euro 36 - 38)</option>
+                    <option value="s">US 7 - 8 (Euro 39 - 41)</option>
+                    <option value="m">US 9 - 10 (Euro 42 - 44)</option>
+                    <option value="l">US 11 - 12 (Euro 45 - 46)</option>
+                    <option value="xl">US 13 - 15 (Euro 47 - 49)</option>
+                </select>
+
+            </fieldset>
+
+            <fieldset>
+                <label>Color Preference</label>
+                <textarea name="Color" placeholder="Add color preferences here, please only use basic colors"></textarea>
+            </fieldset>
+
+            <input type="submit" value="Confirm Information">
+
+        </form>
+
+
+
+    </main>
+
+    <!--start the page footer-->
+    <footer>
+        <p>&copy; 2025 &bull; Carter Watson &bull; Web Essentials</p>
+    </footer>
+
+</body>
+
+</html>
