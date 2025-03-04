@@ -1,0 +1,280 @@
+/* prevent problems with different browsers*/
+* {box-sizing: border-box;}
+
+body {
+    font-family: "Jost", serif;
+    margin: 0;
+}
+
+/* header stuff here */
+header {
+    background-color: #000;
+    padding: 1rem 10px;
+    display: flex;
+    align-items: flex-end;
+}
+
+header div {
+    padding-left: 1vw;
+}
+
+header h1 {
+    margin: 0;
+    color: #68a0a6;
+    font-size: 1.8rem;
+    font-weight: 800;
+}
+header p {
+    margin: 0;
+    color:#68a0a6;
+    font-size: 1.22rem;
+    letter-spacing: 2px;
+}
+
+/* navigation stuff here*/
+
+/* small screens */
+@media only screen and (max-width: 800px) {
+    nav ul {
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+    }
+    nav a {
+        display: block;
+        padding: .8rem;
+        text-decoration: none;
+        font-weight: 700;
+        text-transform: uppercase;
+        text-align: center;
+        border-bottom: solid 1px black;
+        background-color: #084a59;
+        color: #b0d9d5;
+    }
+    nav .active a {
+        background-color: #a61f12;
+        background-image: linear-gradient(#a61f12,#520f08);
+        color: #b0d9d5;
+    }
+}
+
+/* BIG SCREENS */
+@media only screen and (min-width: 801px) {
+    nav {
+        background-color: #084a59;
+    }
+    
+    nav ul {
+        margin: 0;
+        padding: 0 10px;
+        list-style-type: none;
+        display: flex;
+    }
+    
+    nav a {
+        display: block;
+        padding: .83rem 1rem;
+        text-decoration: none;
+        font-size: 1.1rem;
+        color: #b0d9d5;
+        font-weight: 700;
+    }
+    
+    nav li.active a {
+        background-color: #a61f12;
+        background-image: linear-gradient(#a61f12,#520f08);
+        color: #b0d9d5;
+    }
+    
+    nav li a:hover {
+        color: black;
+    }
+} /*end of the media query*/
+
+
+
+/* main stuff here */
+main {
+    padding: 1rem 10px;
+}
+
+main h1 {
+    color: #8c501c;
+}
+
+main h2 {
+    color: #084a59;
+    margin-bottom: .2rem;
+}
+
+main h3 {
+    margin-bottom: .2rem;
+}
+
+main p {
+    margin: 0;
+    color: #333;
+}
+
+main ol {
+    margin-top: .2rem;
+    padding: .5rem 30px;
+    background-color: #efefef;
+    font-weight: 500;
+}
+
+main dl dt {
+    font-weight: 700;
+    margin-top: 1rem;
+}
+
+main dl dd {
+    font-size: .9rem;
+    margin-left: 20px;
+}
+
+main ul {
+    list-style-type: circle;
+}
+
+main ul li {
+    line-height: 125%;
+    font-weight: 500;
+}
+
+main address {
+    font-style: normal;
+    color: #efefef;
+    background-color: #8c501c;
+    border-radius: 10px;
+    border: 1px solid #000;
+    width: 200px;
+}
+
+main address a {
+    color: #80eaff;
+}
+
+main a {
+    color: #a61f12;
+}
+
+main a:hover {
+    color: #000;
+}
+
+main strong {
+    font-weight: 700;
+    color: #000;
+}
+
+main em {
+    font-weight: 300;
+}
+
+.myForm fieldset {
+    border: 1px solid #084a59;
+    border-radius: 3px;
+    margin-bottom: 1rem;
+}
+.myForm legend {
+    color: #084a59;
+    font-size: .8rem;
+}
+.myForm label {
+    margin: .5rem;
+}
+.myForm label, .myForm select, .myForm [type=text], .myForm [type=email], .myForm [type=tel], .myForm textarea {
+    display: block;
+}
+
+.myForm [type=text], .myForm [type=email], .myForm [type=tel], .myForm select, .myForm textarea {
+    border: solid 1px #888;
+    padding: .3rem;
+    width: 250px;
+    border-radius: .3rem;
+    font-family: "Jost", serif;
+    font-weight: 200;
+}
+.myForm textarea {
+    height: 6rem;
+}
+.myForm :required {
+    background-color: rgba(156,51,53,0.1);
+}
+
+.myForm [type=submit] {
+    background-color: #084a59;
+    border: none;
+    padding: 1rem 2rem;
+    border-radius: 10px;
+    color: white;
+    margin: 1rem 0 0 1vw;
+}
+
+/* image stuff here*/
+
+figure.wrapped {
+    width: 30%;
+    margin: 0 0 0 2%;
+    float: right;
+}
+
+figure.wrapped img {
+    width: 100%;
+    height: auto;
+}
+
+figure.wrapped figcaption {
+    text-align: center;
+    font-size: .75rem;
+}
+
+.methodhero {
+    width: 100%;
+    margin: 0;
+}
+
+.methodhero img {
+    width: 100%;
+    height: auto;
+}
+
+div.gallery {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+div.gallery figure {
+    margin: .5rem 2% 0 0;
+}
+
+div.gallery figure:hover {
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.5);
+}
+
+div.gallery figcaption {
+    text-align: center;
+    font-size: .8rem;
+    color: #a61f12;
+    font-weight: 500;
+}
+
+/* footer stuff here */
+footer {
+    background-color: #000;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+footer p {
+    margin: 0;
+    font-size: .8rem;
+    color: #efefef;
+    letter-spacing: 3px;
+}
+
+header, nav, main, footer {
+    max-width: 64rem;
+    margin: 0 auto;
+}
