@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Carter Watson">
+    <meta name="description" content="Let us start your vacation early, by taking away the pressure of planning">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Quicksand:wght@300..700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="vacation.css">
+    <title>CATCH A BREAK: Home</title>
+</head>
+
+<body>
+    <!--Page header-->
+    <header>
+        <!--img src="images/logo.png" alt="site logo" width="65" height="70"-->
+        <div>
+            <h1>CATCH A BREAK</h1>
+            <p>START RELAXING BEFORE YOU LIFTOFF</p>
+        </div>
+    </header>
+
+    <!--Page navigation-->
+    <nav>
+        <ul>
+            <li><a href="index.html">Catch My Break</a></li>
+            <li><a href="gallery.html">Destinations</a></li>
+            <li><a href="learn.html">Learn</a></li>
+            <li class="active"><a href="startplanning.html">Start Planning</a></li>
+            <li><a href="packages.html">Packages</a></li>
+        </ul>
+
+    </nav>
+
+    <!--MAIN-->
+    <main><!--start the main content-->
+        <h1>Let Us Know What Your Ideal Vacation Looks like!</h1>
+
+        <h2>Use This Page To Tell Us What Kind Of Getaway You're Looking For</h2>
+
+        <form method="get" class="myForm" action="thanks.html">
+
+            <fieldset>
+                <legend>Contact Information</legend>
+                <label> First Name* <input type="text" name="fname" required> </label>
+                <label> Last Name* <input type="text" name="lname" required> </label>
+                <label> Email* <input type="email" name="email" required placeholder="johndoe@gmail.com"> </label>
+                <label> Cell Number* <input type="tel" name="phone" required placeholder="123-456-7890"> </label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Seasonal Preference</legend>
+                <label><input type="radio" name="Season" value="Summer">Summer</label>
+                <label><input type="radio" name="Season" value="Spring">Spring</label>
+                <label><input type="radio" name="Season" value="Winter">Winter</label>
+                <label><input type="radio" name="Season" value="Fall">Fall</label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Environmental Preference</legend>
+                <label><input type="radio" name="Environment" value="Beach">Beach</label>
+                <label><input type="radio" name="Environment" value="Mountains">Mountains</label>
+                <label><input type="radio" name="Environment" value="Bustling City">Bustling City</label>
+                <label><input type="radio" name="Environment" value="Quiet Town">Quiet Town</label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Transportation</legend>
+                <label><input type="radio" name="Transportation" value="Rental Car">Rental Car</label>
+                <label><input type="radio" name="Transportation" value="Local/On Foot">Local/On Foot</label>
+                <label><input type="radio" name="Transportation" value="Bus">Bus</label>
+                <label><input type="radio" name="Transportation" value="Campervan">Campervan</label>
+
+            </fieldset>
+
+            <fieldset>
+                <legend>Trip Focus</legend>
+                <label><input type="checkbox" name="Interest" value="chosen">Fun!</label>
+                <label><input type="checkbox" name="Interest" value="chosen">Sightseeing</label>
+                <label><input type="checkbox" name="Interest" value="chosen">Relaxing</label>
+                <label><input type="checkbox" name="Interest" value="chosen">Food/Drink</label>
+                <label><input type="checkbox" name="Interest" value="chosen">Thrills</label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Party Details</legend>
+
+                <label>Number Of People</label>
+                <select name="party size">
+                    <option value="none">Please Select</option>
+                    <option value="couple">1 or 2</option>
+                    <option value="few">3 - 5</option>
+                    <option value="many">5 - 7</option>
+                    <option value="party">7 - 10</option>
+                    <option value="buisness trip">10 or more</option>
+                </select>
+
+                <label>Party Type</label>
+                <select name="party type">
+                    <option value="none">Please Select</option>
+                    <option value="solo">Solo Trip</option>
+                    <option value="Couple">Couples Retreat</option>
+                    <option value="Family">Family Vacation</option>
+                    <option value="Buisness">Buisness Trip</option>
+                    <option value="Event">Birthday/Wedding</option>
+                    <option value="Other">Other</option>
+                </select>
+
+            </fieldset>
+
+            <fieldset>
+                <label>Special Preferences</label>
+                <textarea name="Comments"
+                    placeholder="Add any other desires or requirements for your trip here"></textarea>
+            </fieldset>
+
+            <input type="submit" value="Confirm Information">
+
+        </form>
+    </main>
+
+    <!--Footer-->
+    <footer>
+        <p>&copy; 2025 &bull; Carter Watson &bull; Web Essentials</p>
+    </footer>
